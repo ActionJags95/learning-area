@@ -6,6 +6,14 @@
     <title>My spending record</title>
     <link href="minimal-table.css" rel="stylesheet" type="text/css">
     <style>
+      tbody{
+        font-size: 95;
+        font-style: italic;
+      }
+
+      tfoot{
+        font-weight: bold;
+      }
     </style>
   </head>
   <body>
@@ -13,17 +21,16 @@
 
       <table>
         <caption>How I chose to spend my money</caption>
-          <tr>
-            <th>Purchase</th>
-            <th>Location</th>
-            <th>Date</th>
-            <th>Evaluation</th>
-            <th>Cost (€)</th>
-          </tr>
-          <tr>
-            <td>SUM</td>
-            <td>118</td>
-          </tr>
+          <thead>
+            <tr>
+              <th>Purchase</th>
+              <th>Location</th>
+              <th>Date</th>
+              <th>Evaluation</th>
+              <th>Cost (€)</th>
+            </tr>
+          </thead>
+          
           <tr>
             <td>Haircut</td>
             <td>Hairdresser</td>
@@ -52,6 +59,12 @@
             <td>Good</td>
             <td>5</td>
           </tr>
+          <tfoot>
+            <tr>
+              <td colspan="4">SUM</td>
+              <td colspan="1">118</td>
+            </tr>
+          </tfoot>
     </table>
 
   </body>
